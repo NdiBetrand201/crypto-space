@@ -2,6 +2,7 @@ package com.Trading_plaform.Trading_platform.models;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,6 +14,7 @@ import lombok.NoArgsConstructor;
 public class Coin{
 
     @JsonProperty("id")
+    @Id
     private String id;
 
     @JsonProperty("symbol")
