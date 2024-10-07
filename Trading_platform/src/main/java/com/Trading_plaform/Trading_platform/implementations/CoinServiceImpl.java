@@ -166,8 +166,8 @@ public class CoinServiceImpl implements CoinService {
     }
 
     @Override
-    public String GetTradingCoins() throws JsonProcessingException {
-         String url="https://api.coingecko.com/api/v3/search/trading";
+    public String getTreadingCoins() throws JsonProcessingException {
+         String url="https://api.coingecko.com/api/v3/search/treading";
          RestTemplate restTemplate=new RestTemplate();
          try {
              HttpHeaders headers=new HttpHeaders();
